@@ -7,6 +7,8 @@ A Gleam library for adding colours in terminal outputs.
 
 Very important for building beautiful test suites or ncurses terminal apps.
 
+> Note: Colours working on Gleam 0.15.0 latest main branch 
+
 ## Quick start
 
 Colours is easy to use. 
