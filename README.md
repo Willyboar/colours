@@ -1,5 +1,5 @@
 # colours
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://hex.pm/packages/colours) [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://hex.pm/packages/colours)
 
 ![colors](https://user-images.githubusercontent.com/22755228/114203916-48f7aa00-9961-11eb-82b1-fd5b540f28ff.jpeg)
 
