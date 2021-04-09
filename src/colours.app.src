@@ -1,5 +1,5 @@
 {application, colours,
- [{description, "A Gleam project"},
+ [{description, "A Gleam library for adding colours to terminal"},
   {vsn, "0.1.0"},
   {registered, []},
   {applications,
@@ -9,7 +9,7 @@
    ]},
   {env,[]},
   {modules, []},
-
+  {licenses, ["MIT"]},
   {include_files, ["gleam.toml", "gen"]},
   {links, []}
 ]}.
