@@ -13,7 +13,10 @@ Very important for building beautiful test suites or ncurses terminal apps.
 
 Colours is easy to use. 
 
-Just use any colour you want as a function. For foreground colour add fg and for background color add bg.
+Just use any colour you want as a function. For foreground colour add `fg` and for background color add `bg` 
+
+in front of any colour you want to use from color image.
+
 for example:
 
     colours.fgmaroon("Maroon")
