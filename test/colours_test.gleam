@@ -1,6 +1,10 @@
 import colours
-import gleam/should
+import gleeunit
+import gleeunit/should
 
+pub fn main() {
+  gleeunit.main()
+}
 
 // Testing foreground colour
 pub fn fg_colour_test() {
