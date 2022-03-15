@@ -1,3 +1,13 @@
 name = "colours"
+description = "A Gleam library for adding colours in terminal outputs."
 
+[repository]
+type = "github"
+user = "Willyboar"
+repo = "colours"
 
+[dependencies]
+gleam_stdlib = "~> 0.14"
+
+[dev-dependencies]
+gleeunit = "~> 0.6"
