@@ -4,19 +4,16 @@
 //// You are simple pass your text into the function of your choice.
 //// Library also support basic text effects like bold & underline.
 
-
 // Imports
 import gleam/string
 
-
-// Reset Function
+/// Reset Function
 pub fn reset() -> String {
-	" \e[0m"  // reset() function is very important. With this, text return to the prior situation.
+  // reset() function is very important. With this, text return to the prior situation.
+  " \e[0m"
 }
 
-
 // 256 foreground colors functions
-
 pub fn fgblack(s: String) {
   string.concat(["\e[38;5;0m ", s, reset()])
 }
@@ -1041,11 +1038,7 @@ pub fn fggrey93(s: String) {
   string.concat(["\e[38;5;255m ", s, reset()])
 }
 
-
-
 // 256 background colors functions
-
-
 pub fn bgblack(s: String) {
   string.concat(["\e[48;5;0m ", s, reset()])
 }
@@ -2070,25 +2063,23 @@ pub fn bggrey93(s: String) {
   string.concat(["\e[48;5;255m ", s, reset()])
 }
 
-
-
 // Text Effects Functions
-
 pub fn bold(s: String) {
-  string.concat(["\e[1m ", s, reset()]) // Bold text
+  string.concat(["\e[1m ", s, reset()])
+  // Bold text
 }
 
 pub fn underline(s: String) {
-  string.concat(["\e[4m ", s, reset()]) // Underlines text
+  string.concat(["\e[4m ", s, reset()])
+  // Underlines text
 }
 
 pub fn italic(s: String) {
-  string.concat(["\e[3m ", s, reset()]) // Italic text
+  string.concat(["\e[3m ", s, reset()])
+  // Italic text
 }
 
 pub fn strikethrough(s: String) {
-  string.concat(["\e[9m ", s, reset()]) // Strike through text
+  string.concat(["\e[9m ", s, reset()])
+  // Strike through text
 }
-
-
-
