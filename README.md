@@ -40,13 +40,11 @@ Colours also supports this text effects:
 
 ## Installation
 
-Colours can be installed by adding `colours` to your `rebar.config` dependencies:
+Colours can be installed by typing:
 
-```erlang
-{deps, [
-    colours
-]}.
-```
+`gleam add colours`
+
+inside your project directory.
 
 ## Documentation 
 
