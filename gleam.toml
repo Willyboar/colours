@@ -1,7 +1,7 @@
 name = "colours"
 description = "A Gleam library for adding colours in terminal outputs."
 
-version = "0.1.2"
+version = "0.2.0"
 
 licences = ["MIT"]
 
