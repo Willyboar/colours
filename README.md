@@ -20,23 +20,34 @@ in front of any colour you want to use from color image.
 
 for example:
 
-    colours.fgmaroon("Maroon")
+```colours.fgmaroon("Maroon")```
  
  will print Maroon in Maroon colour.
 
-    colours.bgmaroon("Maroon")
+```colours.bgmaroon("Maroon")```
  
  will print Maroon with Maroon background.
 
 ![256](https://user-images.githubusercontent.com/22755228/66672471-04555a80-ec67-11e9-8c20-aa5d159bc320.png)
 
-Colours also supports this text effects:
+Colours supports this text effects:
 
  - **Bold** (`colours.bold()`) 
  - <ins>Underline</ins> (`colours.underline()`)
  - *Italic* (`colours.italic()`)
  - ~~Strikethrough~~ (`colours.strikethrough()`)
  
+Colours also supports RGB colors for both background and foreground:
+
+``` colours.fg_rgb("Red Foreground", 255, 0, 0)```
+ 
+ will print Red Foreground in Red colour.
+
+`colours.bg_rgb("Red Background", 255, 0, 0)`
+ 
+ will print Red Background with Red background.
+
+ > Note: RGB colors support only Natural numbers 
 
 ## Installation
 

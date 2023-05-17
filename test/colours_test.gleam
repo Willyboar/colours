@@ -23,3 +23,8 @@ pub fn text_effect_test() {
   colours.strikethrough("strikethrough text")
   |> should.equal("\e[9m strikethrough text \e[0m")
 }
+
+pub fn rgb_test() {
+  colours.fg_rgb("rgb color", 255, 51, 255)
+  |> should.equal("\e[38;2;25551255m rgb color \e[0m")
+}

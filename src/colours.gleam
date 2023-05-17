@@ -6,11 +6,23 @@
 
 // Imports
 import gleam/string
+import gleam/int
+import gleam/io
 
 /// Reset Function
 pub fn reset() -> String {
   // reset() function is very important. With this, text return to the prior situation.
   " \e[0m"
+}
+
+// Foreground RGB Color
+pub fn fg_rgb(s: String, r: Int, g: Int, b: Int) -> String {
+  "\e[38;2;" <> int.to_string(r) <> int.to_string(g) <> int.to_string(b) <> "m " <> s <> reset()
+}
+
+//Background RGB Color
+pub fn bg_rgb(s: String, r: Int, g: Int, b: Int) -> String {
+  "\e[48;2;" <> int.to_string(r) <> int.to_string(g) <> int.to_string(b) <> "m " <> s <> reset()
 }
 
 // 256 foreground colors functions
@@ -2082,4 +2094,9 @@ pub fn italic(s: String) {
 pub fn strikethrough(s: String) {
   string.concat(["\e[9m ", s, reset()])
   // Strike through text
+}
+
+pub fn main() {
+  let asdf = "asdf"
+  io.println(bg_rgb(asdf, 255, 0, 255))
 }
